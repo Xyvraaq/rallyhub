@@ -37,4 +37,17 @@ Perché il rally non dovrebbe essere complicato da seguire: dovrebbe essere emoz
 ## 📲 Seguici
 
 Resta aggiornato sulle novità, gli eventi e i contenuti di Rally HUB attraverso i nostri canali ufficiali.
-https://t.me/rallyhub_streaming
+https://t.me/rallyhub_stream
+
+---
+
+## 📖 Open Source
+
+Rally HUB nasce come progetto open source con l’obiettivo di condividere idee, soluzioni e ispirare altri sviluppatori e appassionati nella creazione di nuovi progetti.
+
+Il codice è disponibile per essere studiato, migliorato e utilizzato come punto di partenza per nuove iniziative.
+
+Ti chiediamo però di rispettare il lavoro svolto: **non utilizzare questo progetto per creare una copia di Rally HUB, ripubblicarlo come proprio o rilanciarlo con lo stesso concept o/e identità.**
+
+L’obiettivo dell’open source è condividere conoscenza e creare nuove idee, non replicare il lavoro degli altri. 🏁
+
