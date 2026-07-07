@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rally HUB</title>
+  <link rel="icon" href="https://radiostudio.altervista.org/rallyhub/rallyhub.png" type="image/png">
+  <meta name="description" content="Rally HUB: news, streaming live e statistiche live per seguire il rally con passione. WRC // ERC // CIAR & More.">
+  <link rel="canonical" href="https://radiostudio.altervista.org/rallyhub/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://radiostudio.altervista.org/rallyhub/index.html" aria-label="Rally Hub home">
+      <img class="brand-logo" src="https://radiostudio.altervista.org/rallyhub/rallyhub.png" alt="Rally Hub">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-controls="site-menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-menu" aria-label="Menu principale">
+      <a href="index.html" aria-current="page">HOME</a>
+      <a href="https://radiostudio.altervista.org/rallyhub/streaming/index.html">STREAMING</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Rally news, stats e live hub</p>
+        <h1>VIVI L'EMOZIONE DEL RALLY</h1>
+        <p class="lead">Semplifica il Rally con Passione</p>
+        <a class="button-primary" href="https://radiostudio.altervista.org/rallyhub/streaming/index.html">GUARDA ORA L'ESTREMO</a>
+      </div>
+      <figure class="hero-media" aria-label="Auto da rally in azione">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Petter_Solberg_-_2006_Cyprus_Rally.jpg/960px-Petter_Solberg_-_2006_Cyprus_Rally.jpg" alt="Auto da rally Subaru durante una prova sterrata">
+      </figure>
+    </section>
+
+    <section class="radio section-pad" aria-labelledby="radio-title">
+      <div class="section-heading">
+        <p class="eyebrow">Notizie in pista</p>
+        <h2 id="radio-title">RALLY RADIO</h2>
+      </div>
+      <div class="iframe-shell">
+        <iframe src="https://www.rallynewsplus.it/category/rally-news-plus/" title="Rally News Plus" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="stats section-pad" aria-labelledby="stats-title">
+      <div class="section-heading">
+        <p class="eyebrow">Dati e ritmo gara</p>
+        <h2 id="stats-title">STATISTICHE LIVE</h2>
+        <p>Consulta rapidamente tempi, classifiche e aggiornamenti chiave per seguire ogni prova con lo sguardo giusto.</p>
+      </div>
+      <div class="stats-grid">
+        <a class="stat-button" href="https://www.rallytimes.live/" target="_blank" rel="noopener">
+          <span>MONDIALE / EUROPEO</span>
+          <strong>WRC/ERC</strong>
+        </a>
+        <a class="stat-button" href="https://rally.ficr.it/#/RAL/generalschedule/2026/*/*" target="_blank" rel="noopener">
+          <span>ITALIA</span>
+          <strong>CAMPIONATI ITALIANI</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="feature-section section-pad" aria-labelledby="calendar-title">
+      <div class="feature-copy">
+        <p class="eyebrow">Date e localita'</p>
+        <h2 id="calendar-title">CALENDARIO RALLY</h2>
+        <p>Qui trovi il calendario completo e sempre aggiornato con tutte le date e le localita' delle gare dei campionati mondiali WRC, europei ERC e italiani CIAR.</p>
+      </div>
+      <a class="button-primary" href="https://radiostudio.altervista.org/rallyhub/calendario.html">APRI IL CALENDARIO</a>
+    </section>
+
+    <section class="feature-section feature-section-dark section-pad" aria-labelledby="guide-title">
+      <div class="feature-copy">
+        <p class="eyebrow">Guida per iniziare</p>
+        <h2 id="guide-title">RALLY 101</h2>
+        <p>Ti affascina il mondo del fango e della velocita' ma non sai da dove cominciare? Questa e' la tua guida introduttiva al rally, pensata appositamente per chi inizia da zero e vuole comprendere ogni segreto di questa disciplina estrema.</p>
+      </div>
+      <a class="button-primary" href="https://blurredvision.notion.site/Rally-101-Rally-HUB-386ae0c3a55c80a3ae0ffc42d718c3ea?source=copy_link" target="_blank" rel="noopener">APRI LA GUIDA INTRODUTTIVA</a>
+    </section>
+
+    <section class="fan-strip section-pad" aria-labelledby="fan-title">
+      <div>
+        <p class="eyebrow">Community</p>
+        <h2 id="fan-title">GIRA LA VOCE AI FAN</h2>
+      </div>
+      <p>Condividi Rally Hub con chi segue motori, fango, traversi e dirette: piu' siamo, piu' il rumore arriva lontano.</p>
+      <div class="share-actions" aria-label="Condividi Rally Hub">
+        <button type="button" class="share-button" data-share="facebook" aria-label="Condividi su Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></button>
+        <button type="button" class="share-button" data-share="x" aria-label="Condividi su X"><i class="bi bi-twitter-x" aria-hidden="true"></i></button>
+        <button type="button" class="share-button" data-share="whatsapp" aria-label="Condividi su WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></button>
+        <button type="button" class="share-button" data-share="linkedin" aria-label="Condividi su LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></button>
+        <button type="button" class="share-button" data-share="pinterest" aria-label="Condividi su Pinterest"><i class="bi bi-pinterest" aria-hidden="true"></i></button>
+        <button type="button" class="share-button" data-share="copy" aria-label="Copia link"><i class="bi bi-link-45deg" aria-hidden="true"></i></button>
+      </div>
+      <span class="copy-feedback" aria-live="polite"></span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="brand-logo" src="https://radiostudio.altervista.org/rallyhub/rallyhub.png" alt="Rally Hub">
+    </div>
+    <div class="footer-links">
+      <a href="https://tally.so/r/LZObll" target="_blank" rel="noopener">CONTATTI</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
