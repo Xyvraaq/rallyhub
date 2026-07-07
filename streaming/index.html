@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Streaming | Rally HUB</title>
+  <link rel="icon" href="https://radiostudio.altervista.org/rallyhub/rallyhub.png" type="image/png">
+  <meta name="description" content="Guarda lo streaming Rally HUB con canali WRC/ERC e Nazionale.">
+  <link rel="canonical" href="https://radiostudio.altervista.org/rallyhub/streaming/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://radiostudio.altervista.org/rallyhub/index.html" aria-label="Rally Hub home">
+      <img class="brand-logo" src="https://radiostudio.altervista.org/rallyhub/rallyhub.png" alt="Rally Hub">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-controls="site-menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-menu" aria-label="Menu principale">
+      <a href="https://radiostudio.altervista.org/rallyhub/index.html">HOME</a>
+      <a href="https://radiostudio.altervista.org/rallyhub/streaming/index.html" aria-current="page">STREAMING</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="streaming-hero section-pad" aria-labelledby="streaming-title">
+      <div class="section-heading streaming-heading">
+        <p class="eyebrow">Dirette e canali live</p>
+        <h1 id="streaming-title">STREAMING RALLY HUB</h1>
+        <p>Scegli il canale e segui la diretta: mondiale ed europeo su Canale 1 e nazionale multi-disciplina su Canale 2.</p>
+      </div>
+
+      <div class="streaming-stage">
+        <div class="channel-switch" role="group" aria-label="Seleziona canale streaming">
+          <button class="channel-button is-active" type="button" data-channel="global" aria-pressed="true">
+            <span>Canale 1</span>
+            <strong>WRC/ERC | Globale</strong>
+          </button>
+          <button class="channel-button" type="button" data-channel="national" aria-pressed="false">
+            <span>Canale 2</span>
+            <strong>Multi | Nazionale</strong>
+          </button>
+        </div>
+
+        <div class="player-shell">
+          <video id="stream-player" controls playsinline preload="metadata" poster="https://radiostudio.altervista.org/rallyhub/rallyhub.png"></video>
+          <div class="player-status" id="player-status" aria-live="polite">Caricamento canale...</div>
+        </div>
+
+        <div class="channel-info">
+          <div>
+            <p class="eyebrow" id="channel-label">Canale attivo</p>
+            <h2 id="channel-title">WRC/ERC | Globale</h2>
+            <p id="channel-description">La diretta globale dedicata al rally mondiale ed europeo.</p>
+          </div>
+          <button class="button-primary guide-toggle" id="guide-toggle" type="button" hidden>APRI GUIDA TV</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section section-pad" id="guide-section" aria-labelledby="guide-tv-title" hidden>
+      <div class="section-heading">
+        <p class="eyebrow">Programmazione nazionale</p>
+        <h2 id="guide-tv-title">GUIDA TV</h2>
+        <p>Consulta la programmazione del canale nazionale direttamente da ACI Sport TV.</p>
+      </div>
+      <div class="iframe-shell guide-iframe-shell">
+        <iframe title="Guida TV ACI Sport TV" src="https://guidatv.org/canali/aci-sport-tv" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="brand-logo" src="https://radiostudio.altervista.org/rallyhub/rallyhub.png" alt="Rally Hub">
+    </div>
+    <div class="footer-links">
+      <a href="https://tally.so/r/LZObll" target="_blank" rel="noopener">CONTATTI</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="streaming.js"></script>
+</body>
+</html>
